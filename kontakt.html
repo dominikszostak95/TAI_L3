@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <ul class="nav nav-pills nav-fill">
+                <li class="nav-item my-list active"><a href="index.html" class="nav-link active">Strona glowna</a></li>
+                <li class="nav-item my-list active"><a href="#" class="nav-link active">Blog</a></li>
+                <li class="nav-item my-list active"><a href="#" class="nav-link active">Quiz</a></li>
+                <li class="nav-item my-list active"><a href="#" class="nav-link active">Kontakt</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-3">
+            Example
+        </div>
+        <div class="col-sm-9">
+            <form>
+                <div class="form-group">
+                    <label for="name">Imię: </label>
+                    <input type="text" class="form-control" id="name" placeholder="Imię...">
+                </div>
+                <div class="form-group">
+                    <label for="surname">Nazwisko: </label>
+                    <input type="text" class="form-control" id="surname" placeholder="Nazwisko...">
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail: </label>
+                    <input type="email" class="form-control" id="email" placeholder="E-mail...">
+                </div>
+                <div class="form-group">
+                    <label for="gender">Płeć: </label><br>
+                    <input type="radio" name="gender" id="male" value="male"> Male<br>
+                    <input type="radio" name="gender" id="female" value="female"> Female<br>
+                </div>
+                <div class="form-group">
+                    <label for="description">Opis: </label>
+                    <textarea class="form-control" rows="5" id="description"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="stan">Stan cywilny: </label>
+                    <select id="stan">
+                        <option>Panna/Kawaler</option>
+                        <option>Zamężna/Żonaty</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="wiek">Wiek: </label>
+                    <input type="number" id="wiek" min="1" max="5" value="18">
+                </div>
+                <button type="submit" class="btn btn-primary">Wyślij</button>
+                <button type="reset" class="btn btn-primary">Wyczyść</button>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
