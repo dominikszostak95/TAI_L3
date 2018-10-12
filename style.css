@@ -1,5 +1,5 @@
 body {
-    	background-color: grey;
+    	background-color: white;
 }
 
 li {
@@ -9,5 +9,57 @@ li {
 
 ul {
 	background-color: black;	
+}
+
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:300,600);
+
+#myProgress {
+	width: 100%;
+	background-color: grey;
+}
+#myBar {
+	width: 1%;
+	height: 30px;
+	background-color: green;
+}
+
+.progress{
+	font-size: 20px;
+
+}
+
+.question{
+	font-size: 30px;
+	margin-bottom: 10px;
+}
+
+.answers {
+	text-align: left;
+	display: inline-block;
+}
+
+.answers label{
+	display: block;
+	margin-bottom: 10px;
+}
+
+.slide{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	z-index: 1;
+	opacity: 0;
+	transition: opacity 0.5s;
+}
+
+.active-slide{
+	opacity: 1;
+	z-index: 2;
+}
+
+.quiz-container{
+	position: relative;
+	height: 200px;
 }
 
